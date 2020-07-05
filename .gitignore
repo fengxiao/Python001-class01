@@ -9,3 +9,6 @@ week0*/NO*/*/*.xml
 week0*/NO*/*/*.iml
 week0*/NO*/.idea/.gitignore
 week0*/NO*/.idea/inspectionProfiles/*.xml
+*.pyc
+*.pyc
+week02/NO1/logmysql/logmysql/spiders/__pycache__/logmaoyan.cpython-38.pyc

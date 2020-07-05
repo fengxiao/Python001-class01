@@ -57,9 +57,18 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'logmysql.middlewares.LogmysqlDownloaderMiddleware': 543,
-#}
+
+DOWNLOADER_MIDDLEWARES = {
+    'logmysql.middlewares.LogmysqlDownloaderMiddleware': 543,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'logmysql.middlewares.RandomHttpProxyMiddleware': 400,
+
+}
+HTTP_PROXY_LIST = [
+     'http://82.132.79.235:53281',
+     'http://45.250.226.47:8080',
+]
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html

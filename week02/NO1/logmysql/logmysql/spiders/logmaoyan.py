@@ -19,7 +19,7 @@ class LogmaoyanSpider(scrapy.Spider):
             #打印网页的url
             print(response.url)
             # 打印网页的内容
-            # print(response.text)
+            print(response.text)
             i = 1
             movies = Selector(response=response).xpath('//div[@class="movie-hover-info"]')
             for movie in movies:
