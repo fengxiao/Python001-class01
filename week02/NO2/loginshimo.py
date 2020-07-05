@@ -9,9 +9,6 @@ try:
     browser.get('https://shimo.im/login?from=home')
     time.sleep(1)
 
-    # browser.switch_to_frame(browser.find_elements_by_tag_name('iframe')[0])
-    # btm1 = browser.find_element_by_xpath('/html/body/div[1]/div[1]/ul[1]/li[2]')
-    # btm1.click()
     browser.find_element_by_xpath('//*[@name="mobileOrEmail"]').send_keys('canyoufx@126.com')
     browser.find_element_by_xpath('//*[@name="password"]').send_keys('test123456')
     time.sleep(1)
