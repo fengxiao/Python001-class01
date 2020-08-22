@@ -10,5 +10,5 @@
 
 **完成情况：**
 
-![]( https://github.com/fengxiao/Python001-class01/blob/master/week09/picfornote/homeworkresult.jpg)
+![](https://github.com/fengxiao/Python001-class01/blob/master/week09/picfornote/homeworkresult.jpg)
 
