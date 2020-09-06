@@ -25,7 +25,7 @@ if __name__ == "__main__":
     df_com = pd.read_sql(sql_comment,engine)
 
     # 处理重复的评论信息
-    df_com.drop_duplicates(subset=None, keep='first', inplace=True)
+    df_com.drop_duplicates(subset=['comment'], keep='first', inplace=True)
 
     # 清理评论内容为空值的信息
     df_com.drop(labels = (df_com[df_com['comment'] == ""].index), axis = 0,inplace= True)
